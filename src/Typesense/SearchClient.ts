@@ -24,7 +24,7 @@ export default class SearchClient {
 
     this.configuration = new Configuration(options);
     this.apiCall = new ApiCall(this.configuration);
-    this.multiSearch = new MultiSearch(this.apiCall, this.configuration, true);
+    this.multiSearch = new MultiSearch(this.apiCall, this.configuration, false);
     this.individualCollections = {};
   }
 
